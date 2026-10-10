@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Dev Setup Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Peter's Setup Guide</header>
+    <a class="nav-link" href="#introduction">Introduction</a>
+    <a class="nav-link" href="#installing_vs_code">Installing VS Code</a>
+    <a class="nav-link" href="#live_server">Live Server Extension</a>
+    <a class="nav-link" href="#git_and_github">Git and GitHub</a>
+    <a class="nav-link" href="#basic_terminal_commands">Basic Terminal Commands</a>
+    <a class="nav-link" href="#deploying_with_pages">Deploying with GitHub Pages</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <p>This is the exact setup I use on my Dell laptop running Windows 11 to learn and build web projects. If you're starting out in Nigeria with a regular laptop and home or mobile data, this guide gets you from zero to your first live website.</p>
+      <p>Tools covered: VS Code, the Live Server extension, Git, GitHub, and GitHub Pages.</p>
+    </section>
+
+    <section class="main-section" id="installing_vs_code">
+      <header>Installing VS Code</header>
+      <p>VS Code is the free code editor most developers use. Download it from the official site and install it like any other Windows program.</p>
+      <ol>
+        <li>Go to code.visualstudio.com</li>
+        <li>Download the Windows version</li>
+        <li>Run the installer and keep clicking "Next"</li>
+        <li>Open VS Code when installation finishes</li>
+      </ol>
+    </section>
+
+    <section class="main-section" id="live_server">
+      <header>Live Server Extension</header>
+      <p>Live Server lets you see changes to your HTML and CSS instantly in the browser, without manually refreshing.</p>
+      <ol>
+        <li>Open VS Code</li>
+        <li>Click the Extensions icon on the left sidebar</li>
+        <li>Search for "Live Server"</li>
+        <li>Click Install</li>
+        <li>Right-click your index.html file and choose "Open with Live Server"</li>
+      </ol>
+    </section>
+
+    <section class="main-section" id="git_and_github">
+      <header>Git and GitHub</header>
+      <p>Git tracks changes in your code. GitHub stores your projects online so you can share them with the world.</p>
+      <code>git init</code>
+      <p>starts tracking a folder as a Git project.</p>
+    </section>
+
+    <section class="main-section" id="basic_terminal_commands">
+      <header>Basic Terminal Commands</header>
+      <p>These are the commands I use every time I push a project to GitHub, one at a time, in this order:</p>
+      <code>git add .</code>
+      <code>git commit -m "first commit"</code>
+      <code>git branch -M main</code>
+      <code>git remote add origin https://github.com/your-username/your-repo.git</code>
+      <code>git push -u origin main</code>
+    </section>
+
+    <section class="main-section" id="deploying_with_pages">
+      <header>Deploying with GitHub Pages</header>
+      <p>GitHub Pages turns your repository into a free, live website.</p>
+      <ol>
+        <li>Open your repository on GitHub</li>
+        <li>Go to Settings, then Pages</li>
+        <li>Under Source, choose the main branch and / (root) folder</li>
+        <li>Save, and wait one to two minutes</li>
+        <li>Your site goes live at username.github.io/repo-name</li>
+      </ol>
+    </section>
+
+  </main>
+
+</body>
+</html>

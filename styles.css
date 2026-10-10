@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0a0a23;
+  background-color: #f9f9fb;
+}
+/* ===== Sidebar nav: fixed on the left on wide screens ===== */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #0a0a23;
+  overflow-y: auto;
+  padding-top: 1rem;
+}
+#navbar header {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 0.5rem;
+}
+.nav-link {
+  display: block;
+  color: #c9c9e0;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+}
+
+.nav-link:hover {
+  background-color: #1b1b3a;
+  color: #fff;
+}
+
+/* ===== Main content, pushed to the right of the fixed sidebar ===== */
+#main-doc {
+  margin-left: 250px;
+  padding: 2rem 2.5rem;
+  max-width: 50rem;
+}
+.main-section {
+  margin-bottom: 2.5rem;
+}
+.main-section header {
+  font-size: 1.4rem;
+  color: #356eaf;
+  border-bottom: 2px solid #d0d0d5;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+p {
+  line-height: 1.5;
+}
+
+code {
+  display: block;
+  background-color: #1b1b3a;
+  color: #f4f4f9;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+}
+
+ol {
+  line-height: 1.6;
+}
+/* ===== Mobile-first breakpoint: sidebar moves to the top, like the Piano workshop ===== */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 1.5rem 1.25rem;
+  }
+}
